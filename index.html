@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="header">
+        <h2>my</h2>
+        <h1>To-Do List</h1>
+        <p>lakukan hari ini, versi terbaik dari kamu besok.</p>
+    </div>
+
+    <div class="formTugas">
+        <input type="text" id="text" placeholder="🖊️ Tulis tugas disini...">
+        <button id="tambah">+ Tambah</button>
+        
+        <input type="date" id="date" >
+        <select id="kategori">
+            <option value="">Pilih kategori</option>
+            <option value="kuliah">kuliah</option>
+            <option value="project">project</option>
+            <option value="pribadi">pribadi</option>
+        </select>
+        <select id="prioritas">
+            <option value="">Pilih prioritas</option>
+            <option value="mudah">mudah</option>
+            <option value="sedang">sedang</option>
+            <option value="susah">susah</option>
+        </select>
+    </div>
+
+    <div class="filter">
+        <button id="semua">Semua</button>
+        <button id="belumSelesai">Belum Selesai</button>
+        <button id="selesai">Selesai</button>
+    </div>
+
+    <div class="daftarTugas" id="daftarTugas">
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>

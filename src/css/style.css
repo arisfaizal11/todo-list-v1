@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F5F1EB;
+}
+.header{
+    margin: 5rem
+}
+.header h2{
+    color: #163A35;
+}
+.header h1{
+    color:#202124;
+}
+.header p{
+    color:#77736F;
+}
+
+.formTugas{
+    overflow: hidden;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background-color: white;
+    border : 0.5px solid #E5E7EB ;  
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    height: auto;
+}
+#text{
+    border-radius: 6px;
+    font-size: 18px;
+    border : 0.5px solid #77736F ;  
+    width: 75%;
+    min-height: 9Vh;
+    
+}
+#tambah{
+    background-color: #4F8062;
+    color: white;
+    border-radius: 6px;
+    min-height: 9Vh;
+    width: 19%;
+    border : 0.5px solid #77736F ;  
+    cursor: pointer;
+}
+#date{
+    border-radius: 6px;
+    border : 0.5px solid #77736F ;  
+    width: 32%;
+    min-height: 7Vh;
+    
+}
+#kategori{
+    border : 0.5px solid #77736F ;  
+    border-radius: 6px;
+    width: 32%;
+    min-height: 7Vh;  
+}
+#prioritas{
+    border : 0.5px solid #77736F ;  
+    border-radius: 6px;
+    width: 32%;
+    min-height: 7Vh;
+    padding-left: 1rem;
+}
+
+.filter {
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-right: 5rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.filter button {
+    border-radius: 18px;
+    border: 0.5px solid #E5E7EB;
+    background-color: #3F6B50;
+    color: white;
+
+    padding: 0.4rem 0.7rem;
+    cursor: pointer;
+}
+#semua{
+    
+    width: 9%;
+}
+#belumSelesai{
+    width: 11%;
+}
+#selesai{
+    width: 9%;
+    
+}
+
+.daftarTugas {
+    margin: 2rem 5rem;
+}
+
+.taskCard {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.barisTask {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+
+.barisTask h3 {
+    margin-right: auto;
+    font-size: 30px;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.infoBaris {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.taskCard h3 {
+    color: #202124;
+    margin-top: 0;
+}
+
+.taskCard p {
+    color: #77736F;
+}
+.completed {
+    opacity: 0.6;
+}
+.tagPrioritas {
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    font-size: 1rem;
+    width: auto;
+    flex-shrink: 0;
+    background-color: #F8D7D7;
+    color: #B54242;
+}
+
+.prioritasMudah {
+    background-color: #DDF0E2;
+    color: #39704B;
+    font-size: 1rem;
+    min-height: 4vh;
+}
+
+.prioritasSedang {
+    background-color: #FCEBC5;
+    color: #A36A12;
+    font-size: 1rem;
+    min-height: 4vh;
+}
+
+.tagHapus{
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #B54242;;
+    color: #F8D7D7;
+    border : 0.5px solid #77736F ;  
+    flex-shrink: 0;
+}
+.tagCek{
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.tagEdit {
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #4F8062;
+    color: white;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* =========================
+   FORM EDIT TUGAS
+========================= */
+
+.formEdit {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1.2rem;
+
+    background-color: #F8F9FA;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+/* Input nama dan deadline */
+.formEdit input {
+    width: 100%;
+    padding: 0.8rem;
+
+    border: 1px solid #77736F;
+    border-radius: 6px;
+
+    font-size: 1rem;
+    background-color: white;
+}
+
+/* Kategori dan Prioritas */
+.formEdit select {
+    width: 100%;
+    padding: 0.8rem;
+
+    border: 1px solid #77736F;
+    border-radius: 6px;
+
+    font-size: 1rem;
+    background-color: white;
+
+    cursor: pointer;
+}
+
+/* Semua tombol di form edit */
+.formEdit button {
+    padding: 0.7rem 1rem;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Tombol Simpan */
+.formEdit button:first-of-type {
+    background-color: #4F8062;
+    color: white;
+}
+
+/* Tombol Batal */
+.formEdit button:last-of-type {
+    background-color: #E5E7EB;
+    color: #202124;
+}
+
+/* Saat layar kecil */
+@media (max-width: 600px) {
+
+    .formEdit {
+        grid-template-columns: 1fr;
+    }
+
+}
