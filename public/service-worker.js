@@ -7,7 +7,8 @@ self.addEventListener("install", function(event){
             return cache.addAll([
                 "/",
                 "/manifest.json",
-                "/icon-192.png"
+                "/icon-192.png",
+                "/icon-512.png"
             ]);
         })
     );
@@ -15,11 +16,11 @@ self.addEventListener("install", function(event){
 
 //saat website meminta file/data
 self.addEventListener("fetch",function(event){
-    event.responWith(
+    event.respondWith(
         fetch(event.request).then(function(response){
             //simpan hasil dari internet ke cache
             const salinanResponse= response.clone();
-            cache.open(CACHE_NAME).then(function(cache){
+            caches.open(CACHE_NAME).then(function(cache){
                 cache.put(event.request, salinanResponse);
             });
             return response;
