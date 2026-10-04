@@ -284,3 +284,15 @@ function updateJumlah() {
 }
 
 renderTugas();
+
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function () {
+        navigator.serviceWorker.register("/service-worker.js")
+            .then(function () {
+                console.log("Service Worker terdaftar");
+            })
+            .catch(function (error) {
+                console.log("Service Worker gagal:", error);
+            });
+    });
+}
